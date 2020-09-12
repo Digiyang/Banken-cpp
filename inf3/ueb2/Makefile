@@ -5,7 +5,9 @@ CXXFLAGS += $(WARNFLAGS) $(OPTFLAGS)
 
 all: ueb2
 	@echo "compiling complete!"
-ueb2: ctime.cpp 
+
+ueb2: ctime.cpp cdate.cpp caddress.cpp cmoney.cpp ccustomer.cpp caccount.cpp
+
 clean:
 	@echo "deleting!"
 	$(RM) ueb2 *.o
